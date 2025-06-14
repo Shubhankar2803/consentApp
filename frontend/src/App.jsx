@@ -7,6 +7,7 @@ import ConsentLinkPage from './components/ConsentLinkPage';
 import LogsPage from './components/LogsPage';
 import SignUpPage from './components/SignUpPage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // Add this import
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase';
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/give-consent" element={<ConsentForm />} />
         <Route path="/logs" element={<LogsPage />} />
       </Routes>
+      <Footer /> 
     </Router>
   );
 };
